@@ -238,7 +238,8 @@ d3.json(
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
   // Retrieve the earthquake GeoJSON data.
   d3.json(
-    "https://github.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
+    "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
+    
   ).then(function (platedata) {
     L.geoJson(platedata, {
       color: "#014421",
